@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    background-image: url("fundo.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+bodyww{
+    margin: 0;
+    background-image: url("fundo1.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+nav {
+    margin-top: 200px;
+    margin-left: 100px;
+}

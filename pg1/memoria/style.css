@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-image: url("fundo1.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+background-repeat: no-repeat;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+#cardboard {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: 33%;
+  margin: 5px;
+  transform-style: preserve-3d;
+  transition: 0.3s;
+  position: relative;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  background: gray;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
